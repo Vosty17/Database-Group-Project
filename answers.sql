@@ -1,11 +1,11 @@
 -- Create the database
-CREATE DATABASE IF NOT EXISTS bookstore_db;
+CREATE DATABASE IF NOT EXISTS bookstore_db; -- it will not give an error if database exist 
 USE bookstore_db;
 
 -- 1. country table (created first as it's referenced by address)
 CREATE TABLE country (
     country_id INT PRIMARY KEY AUTO_INCREMENT,
-    country_name VARCHAR(100) NOT NULL,
+    country_name VARCHAR(100) NOT NULL, -- NOT NULL simply means it cannot be left blank
     country_code_2 CHAR(2) NOT NULL,
     country_code_3 CHAR(3) NOT NULL
 );
